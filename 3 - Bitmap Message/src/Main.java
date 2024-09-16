@@ -19,6 +19,7 @@ public class Main {
                 System.out.println(RED_TEXT + "Please enter a valid string!\n" + RESET);
             } else {
                 isValid = true;
+                System.out.println();
             }
         }
 
