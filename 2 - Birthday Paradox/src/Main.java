@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -28,11 +27,15 @@ public class Main {
         }
 
         // If the input is less than 100, only then run the rest of the code
-        System.out.println("Here are " + input + " birthdays:");
+        System.out.println("\nHere are " + input + " birthdays:");
         ArrayList<String> dates = createDatesList(input);
 
-        for (String date : dates) {
-            System.out.print(date + ", ");
+        for (int i = 0; i < dates.size(); i++) {
+            if (i == dates.size() - 1) {
+                System.out.print(dates.get(i) + "\n");
+            } else {
+                System.out.print(dates.get(i) + ", ");
+            }
         }
 
         // Check to see if in the initial simulation of input size, there are multiple of the same date
@@ -40,7 +43,7 @@ public class Main {
         for (int i = 0; i < dates.size(); i++) {
             for(int k = i + 1; k < dates.size(); k++) {
                 if (dates.get(i).equals(dates.get(k))) {
-                    System.out.println("\nIn this simulation, multiple people have a birthday on " + dates.get(i));
+                    System.out.println("In this simulation, multiple people have a birthday on " + dates.get(i) + "\n");
                     datesMatch = true;
                     break;
                 }
@@ -48,7 +51,7 @@ public class Main {
         }
 
         if (!datesMatch) {
-            System.out.println("\nIn this simulation, no one has the same birthday.");
+            System.out.println("In this simulation, no one has the same birthday.\n");
         }
 
         System.out.println("Generating " + input + " random birthdays 100,000 times");
@@ -92,7 +95,7 @@ public class Main {
 
         double percentage = ((double) count / 100_000) * 100;
 
-        System.out.println("Out of 100,000 simulations of " + input + " people, there was a matching birthday in that group " + count + " times.");
+        System.out.println("\nOut of 100,000 simulations of " + input + " people, there was a matching birthday in that group " + count + " times.");
         System.out.println("This means that " + input + " people have a " + percentage + "% chance of having a matching birthday in their group.");
     }
 
