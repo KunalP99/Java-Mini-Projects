@@ -7,6 +7,7 @@ public class Main {
 
         System.out.println("Enter the encrypted Caesar Cipher message to hack.");
         String message = scanner.nextLine();
+        System.out.println();
         char[] MESSAGE_ARR = message.toUpperCase().toCharArray();
 
         // Print out each iteration of decryption starting from key 1 up to key 25
