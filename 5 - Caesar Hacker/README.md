@@ -1,4 +1,4 @@
-# Caesar Cracker
+# Caesar Hacker
 This program can hack messages encrypted with the Caesar cipher, even if you don’t know the key.
 
 More information 👉 [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
@@ -7,6 +7,7 @@ More information 👉 [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_ciphe
 ```plaintext
 Enter the encrypted Caesar Cipher message to hack.
 Xlmw mw e xst wigvix qiwweki, qierx jsv csyv iciw srpc.
+
 Key #1: WKLV LV D WRS VHFUHW PHVVDJH, PHDQW IRU BRXU HBHV RQOB.
 Key #2: VJKU KU C VQR UGETGV OGUUCIG, OGCPV HQT AQWT GAGU QPNA.
 Key #3: UIJT JT B UPQ TFDSFU NFTTBHF, NFBOU GPS ZPVS FZFT POMZ.
