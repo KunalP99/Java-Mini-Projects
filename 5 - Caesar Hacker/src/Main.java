@@ -4,10 +4,27 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String message = "";
+        boolean inputIsNotEmpty = false;
 
-        System.out.println("Enter the encrypted Caesar Cipher message to hack.");
-        String message = scanner.nextLine();
+        do {
+            System.out.println("Enter the encrypted Caesar Cipher message to hack.");
+            message = scanner.nextLine();
+
+            try {
+                // Ensure message is empty, even if the input has spaces in it
+                if (message.trim().isEmpty()) {
+                    System.out.println("Do not leave the input empty.");
+                } else {
+                    inputIsNotEmpty = true;
+                }
+            } catch (Exception e) {
+                System.out.println("Please enter a valid input.");
+            }
+        } while (!inputIsNotEmpty);
+
         System.out.println();
+
         char[] MESSAGE_ARR = message.toUpperCase().toCharArray();
 
         // Print out each iteration of decryption starting from key 1 up to key 25
