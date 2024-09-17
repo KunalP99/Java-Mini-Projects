@@ -10,8 +10,8 @@ After, you will have the option to run a simulation. If you choose to do so, the
 
 You will then be presented with the data, which will show the percentage of groups that had matching dates out of 100,000 groups.
 
-## Example Output
-```console
+## Example
+```plaintext
 How many birthdays shall I generate? (Max 100) 23
 
 Here are 23 birthdays:
