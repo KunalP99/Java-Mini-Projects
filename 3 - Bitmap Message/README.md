@@ -27,7 +27,7 @@ This program uses a multiline string as a bitmap, a 2D image with only two possi
 
 You can change the image by editing the `bitmap.txt` file.
 
-## Example Ouput
+## Example
 ```plaintext
 Enter the message to display with the bitmap. java
 
